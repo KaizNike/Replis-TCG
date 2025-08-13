@@ -11,8 +11,8 @@ config_version=5
 [application]
 
 config/name="Replis TCG"
-config/description="A card game."
-config/version="1.0"
+config/description="A card game. Card madness."
+config/version="2.0"
 run/main_scene="res://freecell/scenes/menu/menu.tscn"
 config/features=PackedStringArray("4.4", "Forward Plus")
 
@@ -45,3 +45,4 @@ exit={
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.108459, 0.00709492, 0.143646, 1)

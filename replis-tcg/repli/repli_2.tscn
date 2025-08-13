@@ -1,7 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://duuv7yhsjjxox"]
+[gd_scene load_steps=5 format=3 uid="uid://duuv7yhsjjxox"]
 
 [ext_resource type="Texture2D" uid="uid://ydubo2fnhmk5" path="res://example1/assets/images/cards/cardJoker.png" id="1_q5rbh"]
 [ext_resource type="Script" uid="uid://h6alxo04c2s5" path="res://repli/texture_rect_repli_card.gd" id="2_8nyfx"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_8nyfx"]
+frequency = 0.0552
+fractal_gain = 0.53
+domain_warp_enabled = true
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_2tcfv"]
+noise = SubResource("FastNoiseLite_8nyfx")
 
 [node name="Repli2" type="Node"]
 
@@ -18,15 +26,16 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -20.0
-offset_top = 41.0
-offset_right = 20.0
-offset_bottom = 81.0
+offset_left = -429.0
+offset_right = 321.0
+offset_bottom = 40.0
 grow_horizontal = 2
 alignment = 1
 
 [node name="CardRepliBasic4Suits" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
 layout_mode = 2
+size_flags_horizontal = 3
 
 [node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits"]
 layout_mode = 0
@@ -35,20 +44,325 @@ offset_bottom = 40.0
 texture = ExtResource("1_q5rbh")
 script = ExtResource("2_8nyfx")
 
+[node name="CardRepliBasic4Suits2" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits3" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits4" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits5" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits5"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits6" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits6"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits7" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits7"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits8" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits8"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits9" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits9"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits10" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits10"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits11" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits11"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits12" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits12"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits13" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits13"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits14" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits14"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits15" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits15"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits16" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits16"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits17" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits17"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits18" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits18"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits19" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits19"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits20" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits20"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits21" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits21"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits22" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits22"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits23" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits23"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits24" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits24"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits25" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits25"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits26" type="Control" parent="Cards/RivalHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RivalHand/CardRepliBasic4Suits26"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
 [node name="YourHand" type="HBoxContainer" parent="Cards"]
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = 7
 anchor_left = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-offset_left = -20.0
-offset_top = 848.0
-offset_right = 20.0
-offset_bottom = 888.0
+anchor_bottom = 1.0
+offset_left = -435.0
+offset_top = -244.0
+offset_right = 315.0
+offset_bottom = -204.0
 grow_horizontal = 2
+grow_vertical = 0
 alignment = 1
 
 [node name="CardRepliBasic4Suits" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
 layout_mode = 2
+size_flags_horizontal = 3
 
 [node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits"]
 layout_mode = 0
@@ -57,7 +371,1203 @@ offset_bottom = 40.0
 texture = ExtResource("1_q5rbh")
 script = ExtResource("2_8nyfx")
 
+[node name="CardRepliBasic4Suits2" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits3" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits4" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits5" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits5"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits6" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits6"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits7" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits7"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits8" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits8"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits9" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits9"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits10" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits10"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits11" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits11"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits12" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits12"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits13" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits13"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits14" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits14"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits15" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits15"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits16" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits16"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits17" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits17"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits18" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits18"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits19" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits19"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits20" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits20"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits21" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits21"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits22" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits22"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits23" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits23"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits24" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits24"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits25" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits25"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits26" type="Control" parent="Cards/YourHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/YourHand/CardRepliBasic4Suits26"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="RightFlankerHand" type="HBoxContainer" parent="Cards"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -213.0
+offset_top = -114.0
+offset_right = 537.0
+offset_bottom = -73.9999
+grow_horizontal = 0
+grow_vertical = 0
+rotation = -1.59235
+alignment = 1
+
+[node name="CardRepliBasic4Suits" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits2" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits3" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits4" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits5" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits5"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits6" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits6"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits7" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits7"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits8" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits8"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits9" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits9"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits10" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits10"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits11" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits11"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits12" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits12"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits13" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits13"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits14" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits14"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits15" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits15"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits16" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits16"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits17" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits17"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits18" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits18"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits19" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits19"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits20" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits20"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits21" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits21"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits22" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits22"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits23" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits23"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits24" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits24"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits25" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits25"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits26" type="Control" parent="Cards/RightFlankerHand"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand/CardRepliBasic4Suits26"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="RightFlankerHand2" type="HBoxContainer" parent="Cards"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 223.0
+offset_top = -985.0
+offset_right = 973.0
+offset_bottom = -945.0
+grow_vertical = 0
+rotation = 1.58532
+alignment = 1
+
+[node name="CardRepliBasic4Suits" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits2" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits3" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits4" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits5" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits5"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits6" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits6"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits7" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits7"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits8" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits8"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits9" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits9"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits10" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits10"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits11" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits11"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits12" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits12"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits13" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits13"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits14" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits14"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits15" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits15"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits16" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits16"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits17" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits17"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits18" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits18"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits19" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits19"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits20" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits20"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits21" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits21"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits22" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits22"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits23" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits23"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits24" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits24"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits25" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits25"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="CardRepliBasic4Suits26" type="Control" parent="Cards/RightFlankerHand2"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="Cards/RightFlankerHand2/CardRepliBasic4Suits26"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_q5rbh")
+script = ExtResource("2_8nyfx")
+
+[node name="Playzone" type="Control" parent="Cards"]
+custom_minimum_size = Vector2(900, 600)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -450.0
+offset_top = -319.0
+offset_right = 450.0
+offset_bottom = 281.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(19.61, 0)
+mouse_filter = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="Cards/Playzone"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="Cards/Playzone/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 8
+
+[node name="TextureRect" type="TextureRect" parent="Cards/Playzone/PanelContainer/MarginContainer"]
+self_modulate = Color(0.781476, 0.689628, 0.41392, 1)
+layout_mode = 2
+texture = SubResource("NoiseTexture2D_2tcfv")
+expand_mode = 3
+
 [connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits/TextureRect" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits2/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits2/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits2/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits2/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits3/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits3/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits3/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits3/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits4/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits4/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits4/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits4/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits5/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits5/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits5/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits5/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits6/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits6/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits6/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits6/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits7/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits7/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits7/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits7/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits8/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits8/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits8/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits8/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits9/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits9/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits9/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits9/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits10/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits10/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits10/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits10/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits11/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits11/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits11/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits11/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits12/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits12/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits12/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits12/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits13/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits13/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits13/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits13/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits14/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits14/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits14/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits14/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits15/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits15/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits15/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits15/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits16/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits16/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits16/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits16/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits17/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits17/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits17/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits17/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits18/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits18/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits18/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits18/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits19/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits19/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits19/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits19/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits20/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits20/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits20/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits20/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits21/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits21/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits21/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits21/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits22/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits22/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits22/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits22/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits23/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits23/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits23/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits23/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits24/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits24/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits24/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits24/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits25/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits25/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits25/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits25/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RivalHand/CardRepliBasic4Suits26/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits26/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RivalHand/CardRepliBasic4Suits26/TextureRect" to="Cards/RivalHand/CardRepliBasic4Suits26/TextureRect" method="_on_mouse_exited"]
 [connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits/TextureRect" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits2/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits2/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits2/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits2/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits3/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits3/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits3/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits3/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits4/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits4/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits4/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits4/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits5/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits5/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits5/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits5/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits6/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits6/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits6/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits6/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits7/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits7/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits7/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits7/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits8/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits8/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits8/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits8/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits9/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits9/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits9/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits9/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits10/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits10/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits10/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits10/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits11/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits11/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits11/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits11/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits12/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits12/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits12/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits12/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits13/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits13/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits13/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits13/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits14/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits14/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits14/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits14/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits15/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits15/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits15/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits15/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits16/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits16/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits16/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits16/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits17/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits17/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits17/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits17/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits18/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits18/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits18/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits18/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits19/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits19/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits19/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits19/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits20/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits20/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits20/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits20/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits21/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits21/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits21/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits21/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits22/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits22/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits22/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits22/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits23/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits23/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits23/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits23/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits24/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits24/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits24/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits24/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits25/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits25/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits25/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits25/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/YourHand/CardRepliBasic4Suits26/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits26/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/YourHand/CardRepliBasic4Suits26/TextureRect" to="Cards/YourHand/CardRepliBasic4Suits26/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits2/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits2/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits2/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits2/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits3/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits3/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits3/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits3/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits4/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits4/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits4/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits4/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits5/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits5/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits5/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits5/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits6/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits6/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits6/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits6/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits7/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits7/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits7/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits7/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits8/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits8/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits8/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits8/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits9/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits9/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits9/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits9/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits10/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits10/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits10/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits10/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits11/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits11/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits11/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits11/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits12/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits12/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits12/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits12/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits13/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits13/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits13/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits13/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits14/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits14/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits14/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits14/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits15/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits15/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits15/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits15/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits16/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits16/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits16/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits16/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits17/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits17/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits17/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits17/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits18/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits18/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits18/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits18/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits19/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits19/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits19/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits19/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits20/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits20/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits20/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits20/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits21/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits21/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits21/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits21/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits22/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits22/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits22/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits22/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits23/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits23/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits23/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits23/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits24/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits24/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits24/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits24/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits25/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits25/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits25/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits25/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand/CardRepliBasic4Suits26/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits26/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand/CardRepliBasic4Suits26/TextureRect" to="Cards/RightFlankerHand/CardRepliBasic4Suits26/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits2/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits2/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits2/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits2/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits3/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits3/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits3/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits3/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits4/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits4/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits4/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits4/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits5/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits5/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits5/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits5/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits6/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits6/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits6/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits6/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits7/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits7/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits7/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits7/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits8/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits8/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits8/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits8/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits9/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits9/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits9/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits9/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits10/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits10/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits10/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits10/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits11/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits11/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits11/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits11/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits12/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits12/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits12/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits12/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits13/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits13/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits13/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits13/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits14/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits14/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits14/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits14/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits15/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits15/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits15/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits15/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits16/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits16/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits16/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits16/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits17/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits17/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits17/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits17/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits18/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits18/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits18/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits18/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits19/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits19/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits19/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits19/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits20/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits20/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits20/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits20/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits21/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits21/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits21/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits21/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits22/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits22/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits22/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits22/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits23/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits23/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits23/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits23/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits24/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits24/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits24/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits24/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits25/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits25/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits25/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits25/TextureRect" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Cards/RightFlankerHand2/CardRepliBasic4Suits26/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits26/TextureRect" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Cards/RightFlankerHand2/CardRepliBasic4Suits26/TextureRect" to="Cards/RightFlankerHand2/CardRepliBasic4Suits26/TextureRect" method="_on_mouse_exited"]
