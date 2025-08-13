@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=3 uid="uid://dmts53po6dct4"]
+
+[ext_resource type="Script" uid="uid://bakkxty31wild" path="res://repli/repli.gd" id="1_8ohjw"]
+[ext_resource type="Script" uid="uid://clqgq1n7v0ar" path="res://addons/card-framework/card_manager.gd" id="4_nr07m"]
+[ext_resource type="PackedScene" uid="uid://cu0v2fr5krc1l" path="res://example2/my_card_factory_dupe.tscn" id="5_vnw20"]
+[ext_resource type="Script" uid="uid://dj46jo3lfbclo" path="res://addons/card-framework/hand.gd" id="6_8ohjw"]
+[ext_resource type="Script" uid="uid://6ams8uvg43gu" path="res://addons/card-framework/pile.gd" id="7_vnw20"]
+
+[node name="repli" type="Node"]
+script = ExtResource("1_8ohjw")
+
+[node name="CardManager" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("4_nr07m")
+card_factory_scene = ExtResource("5_vnw20")
+debug_mode = true
+metadata/_custom_type_script = "uid://clqgq1n7v0ar"
+
+[node name="rivalHand" type="Control" parent="CardManager"]
+anchors_preset = 0
+offset_left = 917.0
+offset_top = 100.0
+offset_right = 957.0
+offset_bottom = 140.0
+script = ExtResource("6_8ohjw")
+
+[node name="yourHand" type="Control" parent="CardManager"]
+anchors_preset = 0
+offset_left = 986.0
+offset_top = 960.0
+offset_right = 1026.0
+offset_bottom = 1000.0
+script = ExtResource("6_8ohjw")
+
+[node name="rivalDeck" type="Control" parent="CardManager"]
+anchors_preset = 0
+offset_left = 154.0
+offset_top = 90.0
+offset_right = 194.0
+offset_bottom = 130.0
+script = ExtResource("7_vnw20")
+
+[node name="yourDeck" type="Control" parent="CardManager"]
+anchors_preset = 0
+offset_left = 1811.0
+offset_top = 941.0
+offset_right = 1851.0
+offset_bottom = 981.0
+script = ExtResource("7_vnw20")

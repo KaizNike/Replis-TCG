@@ -1,0 +1,70 @@
+[gd_scene load_steps=8 format=3 uid="uid://bysr8u2xd3q6v"]
+
+[ext_resource type="Script" uid="uid://clwny5lqi4yve" path="res://addons/simple_cards/example/card_holder.gd" id="1_xk6mb"]
+[ext_resource type="Resource" uid="uid://cxctxmnj62mrx" path="res://example2/resources/2deck.tres" id="3_85hip"]
+[ext_resource type="Script" uid="uid://2qjv6bgffotb" path="res://addons/simple_cards/scripts/card_container.gd" id="9_0eu6r"]
+[ext_resource type="Texture2D" uid="uid://cjr0y5bstltho" path="res://addons/simple_cards/example/assets/guy_test.png" id="9_76trw"]
+[ext_resource type="Script" uid="uid://bp3to2lvrp3k2" path="res://addons/simple_cards/example/entity.gd" id="10_y0sxq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0eu6r"]
+bg_color = Color(0.6, 0.6, 0.6, 0.490196)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xk6mb"]
+bg_color = Color(0, 1, 0, 1)
+
+[node name="ExampleScene" type="Node2D"]
+
+[node name="Card Holder" type="Node2D" parent="."]
+script = ExtResource("1_xk6mb")
+
+[node name="CardContainer" type="Node2D" parent="Card Holder"]
+position = Vector2(17, 19)
+script = ExtResource("9_0eu6r")
+res_deck = ExtResource("3_85hip")
+radius = 100.0
+max_card_spread_angle = 30.0
+orinetation = 315.0
+size = Vector2(100, 200)
+padding = Vector2(2.5, 2.5)
+metadata/_custom_type_script = "uid://2qjv6bgffotb"
+
+[node name="Player" type="Sprite2D" parent="." node_paths=PackedStringArray("health_bar") groups=["entity", "player"]]
+position = Vector2(132, 338)
+scale = Vector2(4, 4)
+texture = ExtResource("9_76trw")
+script = ExtResource("10_y0sxq")
+health_bar = NodePath("ProgressBar")
+
+[node name="ProgressBar" type="ProgressBar" parent="Player"]
+offset_left = -15.0
+offset_top = -14.0
+offset_right = 15.0
+offset_bottom = -10.0
+theme_override_styles/background = SubResource("StyleBoxFlat_0eu6r")
+theme_override_styles/fill = SubResource("StyleBoxFlat_xk6mb")
+show_percentage = false
+
+[node name="StackButton" type="Button" parent="."]
+offset_left = 666.0
+offset_top = 13.0
+offset_right = 764.0
+offset_bottom = 44.0
+text = "Stack Cards"
+
+[node name="ArcButton" type="Button" parent="."]
+offset_left = 678.0
+offset_top = 58.0
+offset_right = 760.0
+offset_bottom = 89.0
+text = "Arc Cards"
+
+[node name="RectButton" type="Button" parent="."]
+offset_left = 668.0
+offset_top = 106.0
+offset_right = 758.0
+offset_bottom = 137.0
+text = "Rect Cards"
+
+[connection signal="pressed" from="StackButton" to="Card Holder" method="_on_stack_button_pressed"]
+[connection signal="pressed" from="ArcButton" to="Card Holder" method="_on_arc_button_pressed"]
+[connection signal="pressed" from="RectButton" to="Card Holder" method="_on_rect_button_pressed"]

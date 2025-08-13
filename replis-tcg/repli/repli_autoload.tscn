@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0js263of38hx"]
+
+[ext_resource type="Script" uid="uid://w23jo1xjruex" path="res://repli/repli_autoload.gd" id="1_nyol3"]
+
+[node name="repliAutoload" type="Node2D"]
+script = ExtResource("1_nyol3")

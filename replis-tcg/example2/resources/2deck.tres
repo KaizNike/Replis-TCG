@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CardDeck" load_steps=5 format=3 uid="uid://cxctxmnj62mrx"]
+
+[ext_resource type="Script" uid="uid://6h70gh0ms0mh" path="res://addons/simple_cards/resources/card_resource.gd" id="1_23l30"]
+[ext_resource type="Resource" uid="uid://yygnfs3g8t7j" path="res://addons/simple_cards/example/card_resources/damage_card.tres" id="2_wovar"]
+[ext_resource type="Resource" uid="uid://bxs6qrsw8f38e" path="res://addons/simple_cards/example/card_resources/heal_card.tres" id="3_iiffh"]
+[ext_resource type="Script" uid="uid://br7g30clg7oso" path="res://addons/simple_cards/scripts/card_deck.gd" id="4_ane4n"]
+
+[resource]
+script = ExtResource("4_ane4n")
+deck_name = &"Test"
+cards = Array[ExtResource("1_23l30")]([ExtResource("2_wovar"), ExtResource("3_iiffh"), ExtResource("2_wovar"), ExtResource("3_iiffh"), ExtResource("2_wovar"), ExtResource("3_iiffh")])
+metadata/_custom_type_script = "uid://br7g30clg7oso"

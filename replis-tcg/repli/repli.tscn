@@ -1,0 +1,102 @@
+[gd_scene load_steps=7 format=3 uid="uid://dmts53po6dct4"]
+
+[ext_resource type="Script" uid="uid://bakkxty31wild" path="res://repli/repli.gd" id="1_8ohjw"]
+[ext_resource type="Script" uid="uid://c67b0vhauddhj" path="res://repli/card_manager_repli.gd" id="2_vqvn6"]
+[ext_resource type="Script" uid="uid://dk2x8hxcs61f8" path="res://repli/repli_hand.gd" id="3_7bct3"]
+[ext_resource type="Script" uid="uid://52g5018rt18c" path="res://repli/repli_deck.gd" id="5_nr07m"]
+[ext_resource type="PackedScene" uid="uid://cu0v2fr5krc1l" path="res://example2/my_card_factory_dupe.tscn" id="5_vnw20"]
+[ext_resource type="Script" uid="uid://bjfescoolxmq4" path="res://repli/repli_pile.gd" id="6_vnw20"]
+
+[node name="repli" type="Node"]
+script = ExtResource("1_8ohjw")
+metadata/_edit_vertical_guides_ = [-464.0]
+
+[node name="CardManagerRepli" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_vqvn6")
+card_factory_scene = ExtResource("5_vnw20")
+debug_mode = true
+metadata/_custom_type_script = "uid://clqgq1n7v0ar"
+
+[node name="rivalHand" type="Control" parent="CardManagerRepli"]
+anchors_preset = 0
+offset_left = 922.0
+offset_top = 100.0
+offset_right = 962.0
+offset_bottom = 140.0
+script = ExtResource("3_7bct3")
+
+[node name="yourHand" type="Control" parent="CardManagerRepli"]
+anchors_preset = 0
+offset_left = 922.0
+offset_top = 827.0
+offset_right = 962.0
+offset_bottom = 867.0
+script = ExtResource("3_7bct3")
+
+[node name="rivalDeck" type="Control" parent="CardManagerRepli"]
+anchors_preset = 0
+offset_left = 154.0
+offset_top = 90.0
+offset_right = 194.0
+offset_bottom = 130.0
+script = ExtResource("5_nr07m")
+
+[node name="yourDeck" type="Control" parent="CardManagerRepli"]
+anchors_preset = 0
+offset_left = 1725.0
+offset_top = 879.0
+offset_right = 1765.0
+offset_bottom = 919.0
+script = ExtResource("3_7bct3")
+
+[node name="yourLeft" type="Control" parent="CardManagerRepli"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("6_vnw20")
+
+[node name="yourFarLeft" type="Control" parent="CardManagerRepli"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("6_vnw20")
+
+[node name="yourRight" type="Control" parent="CardManagerRepli"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("6_vnw20")
+
+[node name="yourFarRight" type="Control" parent="CardManagerRepli"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("6_vnw20")
+
+[node name="rivalLeft" type="Control" parent="CardManagerRepli"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("6_vnw20")
+
+[node name="rivalFarLeft" type="Control" parent="CardManagerRepli"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("6_vnw20")
+
+[node name="rivalRight" type="Control" parent="CardManagerRepli"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("6_vnw20")
+
+[node name="rivalFarRight" type="Control" parent="CardManagerRepli"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("6_vnw20")
